@@ -38,10 +38,10 @@ button:active {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #2563eb, #06b6d4);
+    background: linear-gradient(to bottom, #1e3a8a, #3b82f6);
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, #1d4ed8, #0891b2);
+    background: linear-gradient(to bottom, #1e40af, #2563eb);
 }

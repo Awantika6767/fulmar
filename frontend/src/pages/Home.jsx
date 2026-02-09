@@ -248,22 +248,21 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center">
-                <Anchor className="w-7 h-7 text-white" />
-              </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-700 to-cyan-600 bg-clip-text text-transparent">
-                Fulmar Marine
-              </span>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_taste-adventure-3/artifacts/nxfwj90m_fulmar-removebg-preview.png" 
+                alt="Fulmar Marine Logo" 
+                className="h-16 w-auto"
+              />
             </div>
             <div className="hidden md:flex space-x-8">
-              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</button>
-              <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</button>
-              <button onClick={() => scrollToSection('why-choose')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Why Us</button>
-              <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</button>
+              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-[#1e3a8a] transition-colors font-medium">About</button>
+              <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-[#1e3a8a] transition-colors font-medium">Services</button>
+              <button onClick={() => scrollToSection('why-choose')} className="text-gray-700 hover:text-[#1e3a8a] transition-colors font-medium">Why Us</button>
+              <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-[#1e3a8a] transition-colors font-medium">Contact</button>
             </div>
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] hover:from-[#1e40af] hover:to-[#2563eb] text-white shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Get In Touch
             </Button>
@@ -287,14 +286,14 @@ const Home = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Reliable Marine Solutions.
               <br />
-              <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#60a5fa] to-[#93c5fd] bg-clip-text text-transparent">
                 Global Support.
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed mb-8">
               Expert marine engineering, automation, and spare parts solutions for ship owners and fleet operators across the Middle East, India, and South East Asia.
             </p>
-            <p className="text-lg text-cyan-300 mb-12">
+            <p className="text-lg text-[#93c5fd] mb-12">
               Led by senior marine engineers with 30+ years of combined experience
             </p>
           </div>
@@ -308,7 +307,7 @@ const Home = () => {
             ].map((item, index) => (
               <Card key={index} className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
                 <CardContent className="p-6 flex flex-col items-center text-center">
-                  <div className="text-cyan-400 mb-3">{item.icon}</div>
+                  <div className="text-[#93c5fd] mb-3">{item.icon}</div>
                   <p className="text-white font-semibold">{item.text}</p>
                 </CardContent>
               </Card>
@@ -319,7 +318,7 @@ const Home = () => {
             <Button 
               size="lg"
               onClick={() => scrollToSection('services')}
-              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white text-lg px-8 py-6 shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300"
+              className="bg-gradient-to-r from-[#3b82f6] to-[#1e3a8a] hover:from-[#2563eb] hover:to-[#1e40af] text-white text-lg px-8 py-6 shadow-2xl hover:shadow-blue-500/50 transition-all duration-300"
             >
               Explore Services
             </Button>
@@ -343,7 +342,7 @@ const Home = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               About Us
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-cyan-500 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] mx-auto mb-6"></div>
             <p className="text-xl text-blue-600 font-semibold">Driven by Marine Professionals</p>
           </div>
 
@@ -362,7 +361,7 @@ const Home = () => {
                 With deep shipboard knowledge and hands-on engineering expertise, Fulmar Marine provides dependable technical solutions for vessels operating worldwide. We support both emergency breakdowns and planned maintenance with rapid response teams, genuine spare parts, and class-compliant service delivery.
               </p>
 
-              <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-8 space-y-4">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 space-y-4">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Foundation</h3>
                 {[
                   '30+ years combined marine engineering expertise',
@@ -371,7 +370,7 @@ const Home = () => {
                   'Focused on minimizing downtime and improving operational reliability'
                 ].map((item, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-[#1e3a8a] rounded-full mt-2 flex-shrink-0"></div>
                     <p className="text-gray-700">{item}</p>
                   </div>
                 ))}
@@ -388,7 +387,7 @@ const Home = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Our Core Services
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-cyan-500 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive marine solutions delivered by experienced engineers with 24/7 support
             </p>
@@ -399,11 +398,11 @@ const Home = () => {
               <AccordionItem 
                 key={service.id} 
                 value={service.id}
-                className="bg-white rounded-xl shadow-lg border-2 border-gray-100 hover:border-blue-300 transition-all duration-300 overflow-hidden"
+                className="bg-white rounded-xl shadow-lg border-2 border-gray-100 hover:border-[#3b82f6] transition-all duration-300 overflow-hidden"
               >
-                <AccordionTrigger className="px-8 py-6 hover:no-underline hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all duration-300">
+                <AccordionTrigger className="px-8 py-6 hover:no-underline hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100 transition-all duration-300">
                   <div className="flex items-center space-x-4 text-left">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#1e3a8a] to-[#3b82f6] rounded-lg flex items-center justify-center text-white flex-shrink-0">
                       {service.icon}
                     </div>
                     <div>
@@ -422,7 +421,7 @@ const Home = () => {
                         <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           {items.map((item, idx) => (
                             <li key={idx} className="flex items-start space-x-2">
-                              <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                              <div className="w-1.5 h-1.5 bg-[#1e3a8a] rounded-full mt-2 flex-shrink-0"></div>
                               <span className="text-gray-700">{item}</span>
                             </li>
                           ))}
@@ -438,7 +437,7 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section id="why-choose" className="py-20 px-4 bg-gradient-to-br from-blue-900 via-slate-900 to-cyan-900 text-white relative overflow-hidden">
+      <section id="why-choose" className="py-20 px-4 bg-gradient-to-br from-[#1e3a8a] via-slate-800 to-[#1e40af] text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img 
             src="https://images.unsplash.com/photo-1606185540834-d6e7483ee1a4" 
@@ -452,7 +451,7 @@ const Home = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Why Choose Fulmar Marine
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#3b82f6] to-[#60a5fa] mx-auto mb-6"></div>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Excellence in marine engineering backed by experience, reliability, and global reach
             </p>
@@ -462,7 +461,7 @@ const Home = () => {
             {whyChooseUs.map((item, index) => (
               <Card key={index} className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                 <CardContent className="p-8">
-                  <div className="text-cyan-400 mb-4">{item.icon}</div>
+                  <div className="text-[#60a5fa] mb-4">{item.icon}</div>
                   <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                   <p className="text-gray-300">{item.description}</p>
                 </CardContent>
@@ -479,7 +478,7 @@ const Home = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Contact Us
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-cyan-500 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] mx-auto mb-6"></div>
             <p className="text-xl text-gray-600">
               Let's Keep Your Fleet Sailing
             </p>
@@ -533,34 +532,34 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-200">
+            <Card className="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-[#3b82f6]">
               <CardContent className="p-6 text-center">
-                <Phone className="w-8 h-8 text-blue-600 mx-auto mb-3" />
+                <Phone className="w-8 h-8 text-[#1e3a8a] mx-auto mb-3" />
                 <p className="text-sm text-gray-600 mb-2">Phone</p>
-                <a href="tel:+919684083997" className="text-lg font-bold text-blue-600 hover:text-blue-700 block">
+                <a href="tel:+919684083997" className="text-lg font-bold text-[#1e3a8a] hover:text-[#1e40af] block">
                   +91 9684083997
                 </a>
-                <a href="tel:+919144935508" className="text-lg font-bold text-blue-600 hover:text-blue-700 block mt-1">
+                <a href="tel:+919144935508" className="text-lg font-bold text-[#1e3a8a] hover:text-[#1e40af] block mt-1">
                   +91 9144935508
                 </a>
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-200">
+            <Card className="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-[#3b82f6]">
               <CardContent className="p-6 text-center">
-                <Mail className="w-8 h-8 text-blue-600 mx-auto mb-3" />
+                <Mail className="w-8 h-8 text-[#1e3a8a] mx-auto mb-3" />
                 <p className="text-sm text-gray-600 mb-2">Email</p>
-                <a href="mailto:info@fulmarmarine.in" className="text-lg font-bold text-blue-600 hover:text-blue-700">
+                <a href="mailto:info@fulmarmarine.in" className="text-lg font-bold text-[#1e3a8a] hover:text-[#1e40af]">
                   info@fulmarmarine.in
                 </a>
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-200">
+            <Card className="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-[#3b82f6]">
               <CardContent className="p-6 text-center">
-                <Globe className="w-8 h-8 text-blue-600 mx-auto mb-3" />
+                <Globe className="w-8 h-8 text-[#1e3a8a] mx-auto mb-3" />
                 <p className="text-sm text-gray-600 mb-2">Website</p>
-                <a href="https://www.fulmarmarine.in" target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-blue-600 hover:text-blue-700">
+                <a href="https://www.fulmarmarine.in" target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-[#1e3a8a] hover:text-[#1e40af]">
                   www.fulmarmarine.in
                 </a>
               </CardContent>
@@ -570,15 +569,16 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-12 px-4">
+      <footer className="bg-gradient-to-br from-slate-900 via-[#1e3a8a] to-slate-900 text-white py-12 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center">
-                  <Anchor className="w-6 h-6 text-white" />
-                </div>
-                <span className="text-xl font-bold">Fulmar Marine</span>
+              <div className="flex items-center mb-4">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_taste-adventure-3/artifacts/nxfwj90m_fulmar-removebg-preview.png" 
+                  alt="Fulmar Marine Logo" 
+                  className="h-14 w-auto"
+                />
               </div>
               <p className="text-gray-400">
                 Expert marine engineering solutions for vessels worldwide. Available 24/7 for emergencies.
@@ -588,10 +588,10 @@ const Home = () => {
             <div>
               <h4 className="text-lg font-bold mb-4">Quick Links</h4>
               <div className="space-y-2">
-                <button onClick={() => scrollToSection('about')} className="block text-gray-400 hover:text-cyan-400 transition-colors">About Us</button>
-                <button onClick={() => scrollToSection('services')} className="block text-gray-400 hover:text-cyan-400 transition-colors">Services</button>
-                <button onClick={() => scrollToSection('why-choose')} className="block text-gray-400 hover:text-cyan-400 transition-colors">Why Choose Us</button>
-                <button onClick={() => scrollToSection('contact')} className="block text-gray-400 hover:text-cyan-400 transition-colors">Contact</button>
+                <button onClick={() => scrollToSection('about')} className="block text-gray-400 hover:text-[#60a5fa] transition-colors">About Us</button>
+                <button onClick={() => scrollToSection('services')} className="block text-gray-400 hover:text-[#60a5fa] transition-colors">Services</button>
+                <button onClick={() => scrollToSection('why-choose')} className="block text-gray-400 hover:text-[#60a5fa] transition-colors">Why Choose Us</button>
+                <button onClick={() => scrollToSection('contact')} className="block text-gray-400 hover:text-[#60a5fa] transition-colors">Contact</button>
               </div>
             </div>
 
@@ -601,7 +601,7 @@ const Home = () => {
                 <p>🌍 Middle East</p>
                 <p>🌍 India</p>
                 <p>🌍 South East Asia</p>
-                <p className="text-cyan-400 font-semibold mt-4">24/7 Emergency Support</p>
+                <p className="text-[#60a5fa] font-semibold mt-4">24/7 Emergency Support</p>
               </div>
             </div>
           </div>
