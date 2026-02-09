@@ -249,16 +249,20 @@ const Home = () => {
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-3">
               <img 
-                src="https://customer-assets.emergentagent.com/job_taste-adventure-3/artifacts/nxfwj90m_fulmar-removebg-preview.png" 
+                src="/logo.png" 
                 alt="Fulmar Marine Logo" 
                 className="h-16 w-auto"
               />
+              <div className={scrolled ? 'flex flex-col justify-start ms-4 text-gray-700' : 'flex flex-col justify-start ms-4 text-white'}>
+                <h3 className="text-xl font-bold">Fulmar</h3>
+                <small>Marine Spare & Service</small>
+              </div>
             </div>
             <div className="hidden md:flex space-x-8">
-              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-[#1e3a8a] transition-colors font-medium">About</button>
-              <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-[#1e3a8a] transition-colors font-medium">Services</button>
-              <button onClick={() => scrollToSection('why-choose')} className="text-gray-700 hover:text-[#1e3a8a] transition-colors font-medium">Why Us</button>
-              <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-[#1e3a8a] transition-colors font-medium">Contact</button>
+              <button onClick={() => scrollToSection('about')} className={scrolled ? "text-gray-700 hover:text-[#1e3a8a] transition-colors font-medium" : "text-white hover:text-[#7897ef] transition-colors font-medium"}>About</button>
+              <button onClick={() => scrollToSection('services')} className={scrolled ? "text-gray-700 hover:text-[#1e3a8a] transition-colors font-medium" : "text-white hover:text-[#7897ef] transition-colors font-medium"}>Services</button>
+              <button onClick={() => scrollToSection('why-choose')} className={scrolled ? "text-gray-700 hover:text-[#1e3a8a] transition-colors font-medium" : "text-white hover:text-[#7897ef] transition-colors font-medium"}>Why Us</button>
+              <button onClick={() => scrollToSection('contact')} className={scrolled ? "text-gray-700 hover:text-[#1e3a8a] transition-colors font-medium" : "text-white hover:text-[#7897ef] transition-colors font-medium"}>Contact</button>
             </div>
             <Button 
               onClick={() => scrollToSection('contact')}
@@ -349,10 +353,12 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl transform rotate-3"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1613690399151-65ea69478674" 
-                alt="Marine Engineering" 
-                className="relative rounded-2xl shadow-2xl w-full h-[500px] object-cover"
+              <video
+                src="/marine.mp4"
+                autoPlay
+                loop
+                muted
+                className="relative rounded-2xl shadow-lg border-4 border-gray-200"
               />
             </div>
 
@@ -575,7 +581,7 @@ const Home = () => {
             <div>
               <div className="flex items-center mb-4">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_taste-adventure-3/artifacts/nxfwj90m_fulmar-removebg-preview.png" 
+                  src="/logo.png" 
                   alt="Fulmar Marine Logo" 
                   className="h-14 w-auto"
                 />

@@ -45,3 +45,9 @@ button:active {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(to bottom, #1e40af, #2563eb);
 }
+
+.hyperlink {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
