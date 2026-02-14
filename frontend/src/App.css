@@ -1,4 +1,4 @@
-/* Smooth scrolling for the entire document */
+/* Smooth scrolling for the entire document body */
 html {
     scroll-behavior: smooth;
 }
