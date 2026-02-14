@@ -133,3 +133,34 @@ Create a beautiful one-pager website similar to https://www.potli.app/ for Fulma
 - Smooth transitions and hover effects
 - Responsive breakpoints for all screen sizes
 - Shadcn UI components for consistency
+
+## Updates (Dec 9, 2025 - Logo & Theme Update)
+
+### Logo Integration:
+- ✅ Replaced placeholder logo with actual Fulmar Marine logo
+- ✅ Logo displayed in navigation (64px height)
+- ✅ Logo displayed in footer (56px height)
+- ✅ Logo color scheme: Dark blue (#1e3a8a) and light blue with stylized fulmar bird
+
+### Theme Updates Based on Logo:
+- **Primary Colors Updated:**
+  - Dark Blue: #1e3a8a (from logo)
+  - Medium Blue: #3b82f6
+  - Light Blue: #60a5fa, #93c5fd
+  
+- **Updated Elements:**
+  - All gradients changed from cyan/teal to pure blues
+  - Navigation hover states updated to dark blue
+  - Button gradients updated to match logo colors
+  - Service card icons updated to logo blue
+  - Contact cards updated with logo blue borders
+  - Footer updated with logo blue theme
+  - Accent colors changed to light blues
+  - Scrollbar gradient updated to blues
+  
+### Design Cohesion:
+- Color scheme now perfectly matches the Fulmar Marine brand identity
+- Professional maritime blues throughout
+- Consistent visual language from logo to all UI elements
+- Maintained modern glass-morphism effects with new color palette
+
